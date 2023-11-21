@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 其他設定 */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      font-weight: bolder;
+      transition: 2s;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      vertical-align: middle;
+    }
+
+    h1,
+    h2, 
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .hide, hr {
+      display: none;
+    }
+    /* -------------------------------- */
+    @media(max-width: 576px) {
+      .hide, hr {
+        display: block;
+      }
+      p {
+        padding: 1rem;
+      }
+      .TaiShan {
+        margin-bottom: 1rem;
+      }
+    }
+    @media(min-width: 577px) {
+      *::before {
+        background-color: rgba(0, 0, 0, 0.25);
+        width: 1px;
+        display: block;
+        transform-origin: center top;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content {
+        width: 1800px;
+        height: 800px;
+        position: relative;
+      }
+
+      .TaiShan,
+        .html,
+        .css,
+        .js,
+        .jQuery,
+        .boostrap,
+        .sass,
+        .vue {
+          margin: auto;
+          position: absolute;
+        }
+        /* logo */
+      .TaiShan {
+        width: 500px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+      }
+
+      
+      .TaiShan .row {
+        width: 57%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .TaiShan .col {
+        width: 50%;
+        font-size: 15px;
+      }
+
+      .html {
+        top: 10%;
+      }
+      .html::before {
+        content: "";
+        height: 310%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: rotate(-70deg);
+      }
+
+      .css {
+        top: 0;
+        left: 30%;
+      }
+
+      .css::before {
+        content: "";
+        height: 120%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: rotate(-35deg);
+      }
+
+      .js {
+        left: 10%;
+        bottom: 30%;
+      }
+
+      .js::before {
+        content: "";
+        height: 170%;
+        position: absolute;
+        top: 100%;
+        right: -10%;
+        transform: rotate(-80deg);
+      }
+
+      .jQuery {
+        left: 20%;
+        bottom: 0;
+      }
+
+      .jQuery::before {
+        content: "";
+        height: 90%;
+        position: absolute;
+        top: 90%;
+        right: -10%;
+        transform: rotate(-120deg);
+      }
+
+      .boostrap {
+        right: 20%;
+      }
+
+      .boostrap::before {
+        content: "";
+        height: 180%;
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        transform: rotate(50deg);
+      }
+
+      .sass {
+        right: 0;
+        top: 25%;
+      }
+
+      .sass::before {
+        content: "";
+        height: 300%;
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        transform: rotate(75deg);
+      }
+
+      .vue {
+        bottom: 0;
+        right: 15%;
+      }
+
+      .vue::before {
+        content: "";
+        height: 150%;
+        position: absolute;
+        top: 80%;
+        left: -10%;
+        transform: rotate(110deg);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- LOGO -->
+    <div class="TaiShan">
+      <img src="./images/wda.png" alt="">
+      <h1>泰山職訓局</h1>
+      <h2>從零開始的網頁設計課程</h2>
+      <div class="row">
+        <div class="col">轉職網頁開發人員</div>
+        <div class="col">掌握就業必備技能</div>
+        <div class="col">由淺入深學習技術</div>
+        <div class="col">強化職場的競爭力</div>
+      </div>
+    </div>
+    <hr>
+    <!-- HTML -->
+    <div class="html">
+      <img src="./images/html.png" alt="">
+      <h2>Html</h2>
+      <p class="hide">
+        超文本標記語言是一種用於建立網頁的標準標記語言。
+        HTML是一種基礎技術，常與CSS、JavaScript一起被
+        眾多網站用於設計網頁、網頁應用程式以及行動應用
+        程式的使用者介面。網頁瀏覽器可以讀取HTML檔案，
+        並將其彩現成視覺化網頁。HTML描述了一個網站的結
+        構語意隨著線索的呈現，使之成為一種標記語言而非
+        程式語言。
+      </p>
+    </div>
+    <hr>
+    <!-- CSS -->
+    <div class="css">
+      <img src="./images/css.png" alt="">
+      <h2>Css</h2>
+      <p class="hide">
+        階層式樣式表是一種用來為結構化文件添加樣式的電腦
+        語言，由W3C定義和維護。CSS3現在已被大部分現代瀏
+        覽器支援，而下一版的CSS4仍在開發中。 CSS不僅可
+        以靜態地修飾網頁，還可以配合各種手稿語言動態地
+        對網頁各元素進行格式化。
+      </p>
+    </div>
+    <hr>
+    <!-- JS -->
+    <div class="js">
+      <img src="./images/js.png" alt="">
+      <h2>JavaScipt</h2>
+      <p class="hide">
+        JavaScript是一門基於原型和頭等函數的多範式進階直譯
+        程式語言，它支援物件導向程式設計、指令式編程和函數
+        式程式設計。它提供方法來操控文字、陣列、日期以及正
+        規表示式等。不支援I/O，比如網路、儲存和圖形等，但
+        這些都可以由它的宿主環境提供支援。它由Ecma透過
+        ECMAScript實作語言的標準化。
+      </p>
+    </div>
+    <hr>
+    <!-- JQUERY -->
+    <div class="jQuery">
+      <img src="./images/jq.png" alt="">
+      <h2>jQuery</h2>
+      <p class="hide">
+        jQuery是一套跨瀏覽器的JavaScript函式庫，
+        用於簡化HTML與JavaScript之間的操作。約翰·
+        雷西格在2006年1月的BarCamp NYC上釋出了第
+        一個版本。目前由Dave Methvin領導的團隊進
+        行開發。
+      </p>
+    </div>
+    <hr>
+    <!-- BOOTSTRAP -->
+    <div class="boostrap">
+      <img src="./images/bs.png" alt="">
+      <h2>Bootsth2ap</h2>
+      <p class="hide">
+        Bootstrap是一組用於網站和網路應用程式開發的
+        開源前端框架，包括HTML、CSS及JavaScript的框
+        架，提供字體排印、表單、按鈕、導航及其他各種
+        元件及Javascript擴充套件，旨在使動態網頁和
+        Web應用的開發更加容易。
+      </p>
+    </div>
+    <hr>
+    <!-- SASS -->
+    <div class="sass">
+      <img src="./images/sass.png" alt="">
+      <h2>Sass</h2>
+      <p class="hide">
+        是一個最初由Hampton Catlin設計並由Natalie Weizenbaum
+        開發的層疊樣式表語言。[3][4]在開發最初版本之後，Weizenbaum
+        和Chris Eppstein繼續通過SassScript來繼續擴充Sass的功能。
+        SassScript是一個在Sass檔案中使用的小型手稿語言。
+      </p>
+    </div>
+    <hr>
+    <!-- VUE -->
+    <div class="vue">
+      <img src="./images/vue.png" alt="">
+      <h2>Vue.js</h2>
+      <p class="hide">
+        Vue.js是一個用於建立使用者介面的開源MVVM前端JavaScript框架，
+        也是一個建立單頁應用的Web應用框架。Vue.js由尤雨溪建立，由他和
+        其他活躍的核心團隊成員維護。 2016年一項針對JavaScript框架的調
+        查表明，Vue有著89%的開發者滿意度。
+      </p>
+    </div>
+</body>
+</html>
